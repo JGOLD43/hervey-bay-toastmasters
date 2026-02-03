@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Toastmasters Brand Colors */
-            --ti-burgundy: #772432;
-            --ti-dark-blue: #004165;
-            --ti-navy: #002D4A;
-            --ti-gold: #F2DF74;
-            --primary: var(--ti-dark-blue);
-            --primary-dark: var(--ti-navy);
-            --accent: var(--ti-burgundy);
+            /* Brand Colors - Coral Sea Training Style */
+            --primary-blue: #0284c7;
+            --primary-blue-dark: #0369a1;
+            --navy: #0c4a6e;
+            --accent-blue: #0ea5e9;
+            --primary: var(--primary-blue);
+            --primary-dark: var(--primary-blue-dark);
+            --accent: var(--primary-blue-dark);
             --text: #1e293b;
             --text-light: #64748b;
             --bg: #f8fafc;
@@ -51,7 +51,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, var(--ti-dark-blue) 0%, var(--ti-navy) 100%);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--navy) 100%);
             position: relative;
         }
 
@@ -60,7 +60,7 @@
             position: absolute;
             inset: 0;
             background:
-                radial-gradient(ellipse at 20% 80%, rgba(119, 36, 50, 0.3) 0%, transparent 50%),
+                radial-gradient(ellipse at 20% 80%, rgba(2, 132, 199, 0.3) 0%, transparent 50%),
                 radial-gradient(ellipse at 80% 20%, rgba(242, 223, 116, 0.15) 0%, transparent 40%);
             pointer-events: none;
         }
@@ -84,14 +84,14 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, var(--ti-burgundy), var(--ti-dark-blue), var(--ti-gold));
+            background: linear-gradient(90deg, var(--primary-blue-dark), var(--primary-blue), var(--accent-blue));
         }
 
         .login-card h1 {
             font-size: 1.75rem;
             font-weight: 700;
             margin-bottom: 8px;
-            color: var(--ti-dark-blue);
+            color: var(--primary-blue);
         }
 
         .login-card p {
@@ -140,20 +140,16 @@
         }
 
         .btn-primary {
-            background: var(--ti-burgundy);
+            background: var(--primary-blue);
             color: white;
             width: 100%;
-            box-shadow: 0 4px 14px 0 rgba(119, 36, 50, 0.3);
+            box-shadow: 0 4px 14px 0 rgba(2, 132, 199, 0.3);
         }
 
         .btn-primary:hover {
-            background: #8a2a3c;
+            background: var(--primary-blue-dark);
             transform: translateY(-1px);
-            box-shadow: 0 6px 20px 0 rgba(119, 36, 50, 0.4);
-        }
-
-        .btn-primary:hover {
-            background: var(--primary-dark);
+            box-shadow: 0 6px 20px 0 rgba(2, 132, 199, 0.4);
         }
 
         .btn-secondary {
