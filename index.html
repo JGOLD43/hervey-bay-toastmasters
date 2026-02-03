@@ -9,7 +9,7 @@
     <meta property="og:description" content="Join Hervey Bay's premier public speaking and leadership club. Transform your communication skills in a supportive environment. Free first visit.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jgold43.github.io/hervey-bay-toastmasters/">
-    <meta name="theme-color" content="#004165">
+    <meta name="theme-color" content="#0284c7">
     <title>Hervey Bay Toastmasters Club #6024 | Where Leaders Are Made</title>
 
     <!-- Preload fonts for performance -->
@@ -19,20 +19,20 @@
 
     <style>
         /* ============================================
-           TOASTMASTERS INTERNATIONAL BRAND COLORS
-           Based on TI Brand Manual 2025
+           BRAND COLORS - Coral Sea Training Style
+           Clean, professional blue theme
            ============================================ */
         :root {
             /* Primary Brand Colors */
-            --ti-burgundy: #772432;
-            --ti-dark-blue: #004165;
-            --ti-red: #EC1C24;
-            --ti-gold: #F2DF74;
+            --primary-blue: #0284c7;
+            --primary-blue-dark: #0369a1;
+            --primary-blue-darker: #075985;
+            --accent-blue: #0ea5e9;
 
             /* Extended Palette */
-            --ti-navy: #002D4A;
-            --ti-light-blue: #E8F4F8;
-            --ti-warm-white: #FEFCF9;
+            --navy: #0c4a6e;
+            --light-blue: #e0f2fe;
+            --lighter-blue: #f0f9ff;
 
             /* Neutrals */
             --white: #FFFFFF;
@@ -225,27 +225,27 @@
         }
 
         .btn-primary {
-            background: var(--ti-burgundy);
+            background: var(--primary-blue);
             color: var(--white);
-            box-shadow: 0 4px 14px 0 rgba(119, 36, 50, 0.35);
+            box-shadow: 0 4px 14px 0 rgba(2, 132, 199, 0.35);
         }
 
         .btn-primary:hover {
-            background: #8a2a3c;
+            background: var(--primary-blue-dark);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px 0 rgba(119, 36, 50, 0.4);
+            box-shadow: 0 8px 25px 0 rgba(2, 132, 199, 0.4);
         }
 
         .btn-secondary {
-            background: var(--ti-dark-blue);
-            color: var(--white);
-            box-shadow: 0 4px 14px 0 rgba(0, 65, 101, 0.35);
+            background: var(--white);
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+            box-shadow: none;
         }
 
         .btn-secondary:hover {
-            background: #005580;
+            background: var(--light-blue);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px 0 rgba(0, 65, 101, 0.4);
         }
 
         .btn-outline {
@@ -256,17 +256,17 @@
 
         .btn-outline:hover {
             background: var(--white);
-            color: var(--ti-dark-blue);
+            color: var(--primary-blue);
         }
 
         .btn-outline-dark {
             background: transparent;
-            color: var(--ti-dark-blue);
-            border: 2px solid var(--ti-dark-blue);
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
         }
 
         .btn-outline-dark:hover {
-            background: var(--ti-dark-blue);
+            background: var(--primary-blue);
             color: var(--white);
         }
 
@@ -336,7 +336,7 @@
             display: flex;
             align-items: center;
             gap: 14px;
-            color: var(--white);
+            color: var(--gray-900);
             font-weight: 700;
             font-size: 1.125rem;
             transition: color var(--transition);
@@ -344,7 +344,7 @@
         }
 
         .nav.scrolled .nav-logo {
-            color: var(--ti-dark-blue);
+            color: var(--gray-900);
         }
 
         .nav-logo-icon {
@@ -365,7 +365,7 @@
         }
 
         .nav-link {
-            color: rgba(255, 255, 255, 0.9);
+            color: var(--gray-600);
             font-size: 0.9375rem;
             font-weight: 500;
             transition: color var(--transition);
@@ -383,7 +383,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: var(--ti-burgundy);
+            background: var(--primary-blue);
             transition: width var(--transition);
         }
 
@@ -392,11 +392,11 @@
         }
 
         .nav-link:hover {
-            color: var(--white);
+            color: var(--primary-blue);
         }
 
         .nav.scrolled .nav-link:hover {
-            color: var(--ti-burgundy);
+            color: var(--primary-blue);
         }
 
         .nav-cta {
@@ -404,14 +404,14 @@
         }
 
         .nav:not(.scrolled) .nav-cta {
-            background: var(--white);
-            color: var(--ti-dark-blue);
+            background: var(--primary-blue);
+            color: var(--white);
             box-shadow: var(--shadow-lg);
         }
 
         .nav:not(.scrolled) .nav-cta:hover {
-            background: var(--ti-gold);
-            color: var(--ti-dark-blue);
+            background: var(--primary-blue-dark);
+            color: var(--white);
         }
 
         .mobile-menu-btn {
@@ -420,13 +420,13 @@
             border: none;
             cursor: pointer;
             padding: 8px;
-            color: var(--white);
+            color: var(--gray-700);
             transition: color var(--transition);
             z-index: 10;
         }
 
         .nav.scrolled .mobile-menu-btn {
-            color: var(--ti-dark-blue);
+            color: var(--gray-700);
         }
 
         .mobile-menu {
@@ -466,7 +466,7 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, var(--ti-dark-blue) 0%, var(--ti-navy) 50%, #001a2e 100%);
+            background: linear-gradient(180deg, var(--white) 0%, var(--light-blue) 100%);
             overflow: hidden;
         }
 
@@ -475,17 +475,13 @@
             position: absolute;
             inset: 0;
             background:
-                radial-gradient(ellipse at 20% 80%, rgba(119, 36, 50, 0.3) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 20%, rgba(242, 223, 116, 0.15) 0%, transparent 40%),
-                radial-gradient(ellipse at 50% 50%, rgba(0, 65, 101, 0.5) 0%, transparent 70%);
+                radial-gradient(ellipse at 80% 80%, rgba(2, 132, 199, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 20% 20%, rgba(14, 165, 233, 0.08) 0%, transparent 40%);
             pointer-events: none;
         }
 
         .hero-pattern {
-            position: absolute;
-            inset: 0;
-            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
-            opacity: 0.5;
+            display: none;
         }
 
         .hero-content {
@@ -498,16 +494,15 @@
         }
 
         .hero-text {
-            color: var(--white);
+            color: var(--gray-800);
         }
 
         .hero-eyebrow {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: var(--primary-blue);
+            color: var(--white);
             padding: 10px 20px;
             border-radius: 100px;
             font-size: 0.8125rem;
@@ -521,27 +516,28 @@
         .hero-eyebrow-icon {
             width: 18px;
             height: 18px;
-            color: var(--ti-gold);
+            color: var(--white);
         }
 
         .hero-title {
-            color: var(--white);
+            color: var(--gray-900);
             margin-bottom: 28px;
             animation: fadeInUp 0.8s ease 0.1s forwards;
             opacity: 0;
         }
 
         .hero-title-accent {
-            background: linear-gradient(135deg, var(--ti-gold) 0%, #FFE566 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--primary-blue);
+            background: none;
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: var(--primary-blue);
+            background-clip: unset;
         }
 
         .hero-subtitle {
             font-size: 1.25rem;
             line-height: 1.8;
-            color: rgba(255, 255, 255, 0.85);
+            color: var(--gray-600);
             margin-bottom: 40px;
             max-width: 520px;
             animation: fadeInUp 0.8s ease 0.2s forwards;
@@ -561,7 +557,7 @@
             gap: 48px;
             margin-top: 64px;
             padding-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            border-top: 1px solid var(--gray-200);
             animation: fadeInUp 0.8s ease 0.4s forwards;
             opacity: 0;
         }
@@ -573,123 +569,30 @@
         .hero-stat-value {
             font-size: 2.5rem;
             font-weight: 800;
-            color: var(--ti-gold);
+            color: var(--primary-blue);
             line-height: 1;
             margin-bottom: 8px;
         }
 
         .hero-stat-label {
             font-size: 0.875rem;
-            color: rgba(255, 255, 255, 0.7);
+            color: var(--gray-500);
             font-weight: 500;
         }
 
-        /* Hero Visual Card */
+        /* Hero Visual */
         .hero-visual {
             animation: fadeInUp 0.8s ease 0.2s forwards;
             opacity: 0;
         }
 
-        .hero-image-card {
-            background: var(--white);
-            border-radius: 24px;
-            padding: 48px;
-            box-shadow: var(--shadow-2xl);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-image-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--ti-burgundy), var(--ti-dark-blue), var(--ti-gold));
-        }
-
-        .hero-image-content {
-            text-align: center;
-            margin-bottom: 32px;
-        }
-
-        .hero-image-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 24px;
-            background: linear-gradient(135deg, var(--ti-light-blue) 0%, rgba(0, 65, 101, 0.15) 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero-image-icon svg {
-            width: 40px;
-            height: 40px;
-            color: var(--ti-dark-blue);
-        }
-
-        .hero-image-content h3 {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--gray-900);
-            margin-bottom: 12px;
-        }
-
-        .hero-image-content p {
-            color: var(--gray-500);
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-
-        .hero-image-features {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            margin-bottom: 32px;
-        }
-
-        .hero-image-feature {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.9375rem;
-            color: var(--gray-700);
-            font-weight: 500;
-        }
-
-        .hero-image-feature svg {
-            width: 20px;
-            height: 20px;
-            color: var(--success);
-            flex-shrink: 0;
-        }
-
-        .hero-image-badge {
-            background: linear-gradient(135deg, var(--ti-burgundy) 0%, #5a1c28 100%);
+        .hero-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
             border-radius: 16px;
-            padding: 24px;
-            text-align: center;
-            color: var(--white);
-        }
-
-        .hero-image-badge-text {
-            display: block;
-            font-size: 0.875rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            opacity: 0.9;
-            margin-bottom: 4px;
-        }
-
-        .hero-image-badge-value {
-            display: block;
-            font-size: 2.5rem;
-            font-weight: 800;
-            line-height: 1;
+            box-shadow: var(--shadow-2xl);
+            object-fit: cover;
         }
 
         /* Contact Section Form */
@@ -724,7 +627,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, var(--ti-burgundy), var(--ti-dark-blue), var(--ti-gold));
+            background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark), var(--accent-blue));
         }
 
         .form-header {
@@ -770,9 +673,9 @@
 
         .form-input:focus {
             outline: none;
-            border-color: var(--ti-dark-blue);
+            border-color: var(--primary-blue-dark);
             background: var(--white);
-            box-shadow: 0 0 0 4px rgba(0, 65, 101, 0.1);
+            box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.1);
         }
 
         .form-input::placeholder {
@@ -847,44 +750,45 @@
         }
 
         /* ============================================
-           SOCIAL PROOF BAR
+           STATS BAR
            ============================================ */
-        .social-proof {
-            background: var(--white);
-            border-bottom: 1px solid var(--gray-100);
-            padding: 32px 0;
+        .stats-bar {
+            background: linear-gradient(135deg, var(--navy) 0%, #0a3a5c 100%);
+            padding: 48px 0;
             position: relative;
             z-index: 10;
         }
 
-        .social-proof-inner {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 64px;
-            flex-wrap: wrap;
+        .stats-bar-inner {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            text-align: center;
         }
 
-        .social-proof-item {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            color: var(--gray-600);
-            font-size: 0.9375rem;
+        .stats-bar-item {
+            color: var(--white);
+        }
+
+        .stats-bar-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stats-bar-label {
+            font-size: 0.875rem;
             font-weight: 500;
-        }
-
-        .social-proof-icon {
-            width: 28px;
-            height: 28px;
-            color: var(--ti-dark-blue);
+            color: rgba(255, 255, 255, 0.8);
         }
 
         /* ============================================
            TAGLINE BANNER
            ============================================ */
         .tagline-banner {
-            background: var(--ti-burgundy);
+            background: var(--primary-blue);
             padding: 24px 0;
             text-align: center;
         }
@@ -919,7 +823,7 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: var(--ti-burgundy);
+            color: var(--primary-blue);
             font-size: 0.8125rem;
             font-weight: 700;
             letter-spacing: 0.1em;
@@ -931,7 +835,7 @@
             content: '';
             width: 40px;
             height: 2px;
-            background: var(--ti-burgundy);
+            background: var(--primary-blue);
         }
 
         .about-title {
@@ -960,7 +864,7 @@
         .about-feature-icon {
             width: 48px;
             height: 48px;
-            background: linear-gradient(135deg, var(--ti-light-blue) 0%, rgba(0, 65, 101, 0.1) 100%);
+            background: linear-gradient(135deg, var(--light-blue) 0%, rgba(2, 132, 199, 0.1) 100%);
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -971,7 +875,7 @@
         .about-feature-icon svg {
             width: 24px;
             height: 24px;
-            color: var(--ti-dark-blue);
+            color: var(--primary-blue-dark);
         }
 
         .about-feature-content h4 {
@@ -990,48 +894,12 @@
             position: relative;
         }
 
-        .about-image-wrapper {
-            position: relative;
-            border-radius: 24px;
-            overflow: hidden;
-            box-shadow: var(--shadow-2xl);
-        }
-
-        .about-image-wrapper::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(180deg, transparent 60%, rgba(0, 45, 74, 0.8) 100%);
-            z-index: 1;
-        }
-
         .about-image {
             width: 100%;
-            height: 500px;
-            background: linear-gradient(135deg, var(--ti-dark-blue) 0%, var(--ti-burgundy) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .about-image-text {
-            position: absolute;
-            bottom: 32px;
-            left: 32px;
-            right: 32px;
-            z-index: 2;
-            color: var(--white);
-        }
-
-        .about-image-text h3 {
-            font-size: 1.5rem;
-            color: var(--white);
-            margin-bottom: 8px;
-        }
-
-        .about-image-text p {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.9375rem;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: var(--shadow-2xl);
+            object-fit: cover;
         }
 
         .about-badge {
@@ -1040,7 +908,7 @@
             right: -20px;
             width: 140px;
             height: 140px;
-            background: var(--ti-gold);
+            background: var(--accent-blue);
             border-radius: 50%;
             display: flex;
             flex-direction: column;
@@ -1054,14 +922,14 @@
         .about-badge-value {
             font-size: 2.5rem;
             font-weight: 900;
-            color: var(--ti-dark-blue);
+            color: var(--primary-blue-dark);
             line-height: 1;
         }
 
         .about-badge-label {
             font-size: 0.75rem;
             font-weight: 700;
-            color: var(--ti-dark-blue);
+            color: var(--primary-blue-dark);
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
@@ -1110,7 +978,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, var(--ti-dark-blue), var(--ti-burgundy));
+            background: linear-gradient(90deg, var(--primary-blue-dark), var(--primary-blue));
             transform: scaleX(0);
             transform-origin: left;
             transition: transform var(--transition);
@@ -1128,7 +996,7 @@
         .benefit-icon {
             width: 64px;
             height: 64px;
-            background: linear-gradient(135deg, var(--ti-light-blue) 0%, rgba(0, 65, 101, 0.15) 100%);
+            background: linear-gradient(135deg, var(--light-blue) 0%, rgba(2, 132, 199, 0.15) 100%);
             border-radius: 16px;
             display: flex;
             align-items: center;
@@ -1139,7 +1007,7 @@
         .benefit-icon svg {
             width: 32px;
             height: 32px;
-            color: var(--ti-dark-blue);
+            color: var(--primary-blue-dark);
         }
 
         .benefit-card h3 {
@@ -1193,7 +1061,7 @@
             right: 32px;
             width: 48px;
             height: 48px;
-            color: var(--ti-burgundy);
+            color: var(--primary-blue);
             opacity: 0.2;
         }
 
@@ -1217,7 +1085,7 @@
         .testimonial-avatar {
             width: 64px;
             height: 64px;
-            background: linear-gradient(135deg, var(--ti-dark-blue) 0%, var(--ti-burgundy) 100%);
+            background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--primary-blue) 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -1241,8 +1109,8 @@
 
         .testimonial-badge {
             display: inline-block;
-            background: var(--ti-gold);
-            color: var(--ti-dark-blue);
+            background: var(--accent-blue);
+            color: var(--primary-blue-dark);
             font-size: 0.6875rem;
             font-weight: 700;
             padding: 4px 8px;
@@ -1254,7 +1122,7 @@
            MEETING INFO SECTION
            ============================================ */
         .meeting {
-            background: var(--ti-dark-blue);
+            background: var(--primary-blue-dark);
             color: var(--white);
             position: relative;
             overflow: hidden;
@@ -1265,7 +1133,7 @@
             position: absolute;
             inset: 0;
             background:
-                radial-gradient(ellipse at 0% 100%, rgba(119, 36, 50, 0.3) 0%, transparent 50%),
+                radial-gradient(ellipse at 0% 100%, rgba(2, 132, 199, 0.3) 0%, transparent 50%),
                 radial-gradient(ellipse at 100% 0%, rgba(242, 223, 116, 0.1) 0%, transparent 50%);
             pointer-events: none;
         }
@@ -1286,7 +1154,7 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: var(--ti-gold);
+            color: var(--accent-blue);
             font-size: 0.8125rem;
             font-weight: 700;
             letter-spacing: 0.1em;
@@ -1298,7 +1166,7 @@
             content: '';
             width: 40px;
             height: 2px;
-            background: var(--ti-gold);
+            background: var(--accent-blue);
         }
 
         .meeting-title {
@@ -1341,7 +1209,7 @@
         .meeting-detail-icon svg {
             width: 28px;
             height: 28px;
-            color: var(--ti-gold);
+            color: var(--accent-blue);
         }
 
         .meeting-detail-content h4 {
@@ -1418,13 +1286,13 @@
         }
 
         .faq-question:hover {
-            color: var(--ti-burgundy);
+            color: var(--primary-blue);
         }
 
         .faq-question svg {
             width: 24px;
             height: 24px;
-            color: var(--ti-dark-blue);
+            color: var(--primary-blue-dark);
             transition: transform var(--transition);
             flex-shrink: 0;
         }
@@ -1454,7 +1322,7 @@
            CTA SECTION
            ============================================ */
         .cta {
-            background: linear-gradient(135deg, var(--ti-burgundy) 0%, #5a1c28 100%);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #075985 100%);
             color: var(--white);
             text-align: center;
             position: relative;
@@ -1495,20 +1363,20 @@
 
         .cta .btn-primary {
             background: var(--white);
-            color: var(--ti-burgundy);
+            color: var(--primary-blue);
             box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
         }
 
         .cta .btn-primary:hover {
-            background: var(--ti-gold);
-            color: var(--ti-dark-blue);
+            background: var(--accent-blue);
+            color: var(--primary-blue-dark);
         }
 
         /* ============================================
            FOOTER
            ============================================ */
         .footer {
-            background: var(--ti-navy);
+            background: var(--navy);
             color: var(--white);
             padding: 80px 0 40px;
         }
@@ -1545,7 +1413,7 @@
         }
 
         .footer-social a:hover {
-            background: var(--ti-burgundy);
+            background: var(--primary-blue);
             transform: translateY(-3px);
         }
 
@@ -1578,7 +1446,7 @@
         }
 
         .footer-links a:hover {
-            color: var(--ti-gold);
+            color: var(--accent-blue);
         }
 
         .footer-bottom {
@@ -1605,7 +1473,7 @@
         }
 
         .footer-ti-link:hover {
-            color: var(--ti-gold);
+            color: var(--accent-blue);
         }
 
         /* ============================================
@@ -1810,8 +1678,8 @@
                 grid-template-columns: 1fr;
             }
 
-            .social-proof-inner {
-                flex-direction: column;
+            .stats-bar-inner {
+                grid-template-columns: repeat(2, 1fr);
                 gap: 24px;
             }
 
@@ -1860,9 +1728,9 @@
         <div class="nav-inner">
             <a href="#" class="nav-logo">
                 <svg class="nav-logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="48" height="48" rx="12" fill="currentColor"/>
-                    <path d="M24 10L32 18H27V28H21V18H16L24 10Z" fill="#F2DF74"/>
-                    <rect x="14" y="32" width="20" height="6" rx="1" fill="white"/>
+                    <rect width="48" height="48" rx="12" fill="#0284c7"/>
+                    <path d="M24 10L32 18H27V28H21V18H16L24 10Z" fill="white"/>
+                    <rect x="14" y="32" width="20" height="6" rx="1" fill="white" opacity="0.8"/>
                 </svg>
                 <span>Hervey Bay<br>Toastmasters</span>
             </a>
@@ -1934,78 +1802,34 @@
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="hero-image-card">
-                        <div class="hero-image-content">
-                            <div class="hero-image-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                    <circle cx="9" cy="7" r="4"/>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-                                </svg>
-                            </div>
-                            <h3>Join Our Community</h3>
-                            <p>Every Tuesday at 7pm, people just like you gather to practice, learn, and grow together.</p>
-                        </div>
-                        <div class="hero-image-features">
-                            <div class="hero-image-feature">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>Supportive environment</span>
-                            </div>
-                            <div class="hero-image-feature">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>No experience needed</span>
-                            </div>
-                            <div class="hero-image-feature">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>Progress at your pace</span>
-                            </div>
-                            <div class="hero-image-feature">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>Refreshments provided</span>
-                            </div>
-                        </div>
-                        <div class="hero-image-badge">
-                            <span class="hero-image-badge-text">First Visit</span>
-                            <span class="hero-image-badge-value">FREE</span>
-                        </div>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=500&fit=crop"
+                         alt="Public speaking presentation"
+                         class="hero-image"
+                         loading="eager">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Social Proof Bar -->
-    <section class="social-proof">
+    <!-- Stats Bar -->
+    <section class="stats-bar">
         <div class="container">
-            <div class="social-proof-inner">
-                <div class="social-proof-item">
-                    <svg class="social-proof-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"/>
-                        <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                    </svg>
-                    Part of 16,800+ clubs in 143 countries
+            <div class="stats-bar-inner">
+                <div class="stats-bar-item">
+                    <div class="stats-bar-value">40+</div>
+                    <div class="stats-bar-label">Years Serving Hervey Bay</div>
                 </div>
-                <div class="social-proof-item">
-                    <svg class="social-proof-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    </svg>
-                    Trusted for over 100 years
+                <div class="stats-bar-item">
+                    <div class="stats-bar-value">143</div>
+                    <div class="stats-bar-label">Countries Worldwide</div>
                 </div>
-                <div class="social-proof-item">
-                    <svg class="social-proof-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                        <circle cx="9" cy="7" r="4"/>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-                    </svg>
-                    300,000+ members worldwide
+                <div class="stats-bar-item">
+                    <div class="stats-bar-value">16,800+</div>
+                    <div class="stats-bar-label">Clubs Globally</div>
+                </div>
+                <div class="stats-bar-item">
+                    <div class="stats-bar-value">100%</div>
+                    <div class="stats-bar-label">Supportive Environment</div>
                 </div>
             </div>
         </div>
@@ -2068,19 +1892,9 @@
                     <a href="#contact" class="btn btn-secondary">Visit Us This Tuesday</a>
                 </div>
                 <div class="about-visual animate-on-scroll animate-delay-2">
-                    <div class="about-image-wrapper">
-                        <div class="about-image">
-                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                <circle cx="9" cy="7" r="4"/>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-                            </svg>
-                        </div>
-                        <div class="about-image-text">
-                            <h3>Fun, Supportive Environment</h3>
-                            <p>Every Tuesday at Kawungan State School</p>
-                        </div>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&h=450&fit=crop"
+                         alt="Group of people collaborating and learning together"
+                         class="about-image">
                     <div class="about-badge">
                         <div class="about-badge-value">40+</div>
                         <div class="about-badge-label">Years</div>
@@ -2520,7 +2334,7 @@
                 <div class="footer-brand">
                     <a href="#" class="nav-logo" style="color: var(--white);">
                         <svg class="nav-logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="48" height="48" rx="12" fill="#772432"/>
+                            <rect width="48" height="48" rx="12" fill="#0284c7"/>
                             <path d="M24 10L32 18H27V28H21V18H16L24 10Z" fill="#F2DF74"/>
                             <rect x="14" y="32" width="20" height="6" rx="1" fill="white"/>
                         </svg>
